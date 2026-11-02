@@ -81,8 +81,8 @@ h1, h2, h3, p { margin: 0; }
 
 /* ===== Hero ===== */
 .hero .cadre { display: flex; flex-wrap: wrap; }
-.hero-gauche { flex: 1 1 280px; display: flex; flex-direction: column; border-right: var(--trait); }
-.hero-annee { background: var(--c2); padding: 20px 24px 12px; border-bottom: var(--trait); font-family: var(--titre); font-weight: 900; font-size: clamp(60px, 12vw, 84px); line-height: 1; }
+.hero-gauche { flex: 1 1 320px; display: flex; flex-direction: column; border-right: var(--trait); container-type: inline-size; }
+.hero-annee { background: var(--c2); padding: 20px 24px 12px; border-bottom: var(--trait); font-family: var(--titre); font-weight: 900; font-size: 64px; font-size: clamp(44px, 21cqi, 96px); line-height: 1; white-space: nowrap; }
 .hero-intro { flex: 1; background: var(--c1); padding: 22px 24px; display: flex; gap: 18px; }
 .hero-intro .vertical { writing-mode: vertical-rl; font-family: var(--kanji); font-weight: 900; font-size: 42px; line-height: 1; color: var(--ligne); }
 .hero-droite { flex: 999 1 560px; min-width: 0; background: var(--c3); padding: 32px 36px 36px; display: flex; flex-direction: column; gap: 22px; }
