@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Vidéo · Japon 2028</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚄</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="video">
+<div id="entete"></div>
+
+<nav class="ariane" aria-label="Fil d’Ariane"><div class="cadre" id="ariane"></div></nav>
+
+<main id="contenu">
+  <section class="gare-tete bloc">
+    <div class="cadre">
+      <div class="gare-nom" id="gare-nom"></div>
+      <div class="gare-jours" id="gare-jours"></div>
+    </div>
+  </section>
+  <div class="rayures fine bloc" aria-hidden="true" style="border-left:0;border-right:0;border-top:0"></div>
+
+  <section class="video-bloc bloc">
+    <div class="cadre">
+      <article class="video-principale">
+        <div class="lecteur" id="lecteur"></div>
+        <h2 id="video-titre"></h2>
+        <p id="video-description"></p>
+      </article>
+      <aside class="video-cote" aria-label="Infos de l’étape">
+        <div class="ligne-tampon" id="tampon-jour"></div>
+        <div class="mini-carte" id="mini-carte"></div>
+        <div class="sur-ligne" id="sur-ligne"></div>
+      </aside>
+    </div>
+  </section>
+
+  <nav class="voisines bloc" aria-label="Vidéos voisines"><div class="cadre" id="voisines"></div></nav>
+
+  <section class="bloc" aria-labelledby="titre-frise">
+    <div class="cadre">
+      <div class="bloc-tete"><h2 id="titre-frise">Toute la ligne</h2><p>Fais défiler pour voir tous les jours</p></div>
+      <div class="frise"><div class="frise-interne" id="frise"></div></div>
+    </div>
+  </section>
+</main>
+
+<div id="pied"></div>
+<script src="assets/donnees.js"></script>
+<script src="assets/carte.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
