@@ -78,10 +78,10 @@
     if (publiee(v)) {
       return "<" + tag + ' class="vignette en-ligne" aria-label="Regarder : ' + esc(v.titre) + '">' +
         '<img src="' + miniature(v) + '" alt="" loading="lazy">' +
-        '<span class="lecture">' + PLAY + "</span>" +
+        '<span class="vignette-contenu"><span class="lecture">' + PLAY + "</span></span>" +
         (v.duree ? '<span class="duree">' + esc(v.duree) + "</span>" : "") + "</" + fin + ">";
     }
-    return "<" + tag + ' class="vignette a-venir">Vidéo en préparation</' + fin + ">";
+    return "<" + tag + ' class="vignette a-venir"><span class="vignette-contenu">Vidéo en préparation</span></' + fin + ">";
   }
   function carteSVG(mini) {
     return '<svg viewBox="190 380 200 100" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">' +
@@ -307,7 +307,7 @@
       });
     } else {
       lecteur.className = "lecteur a-venir";
-      lecteur.innerHTML = HORLOGE + "<span>Vidéo en préparation · elle sera publiée au fil du voyage</span>";
+      lecteur.innerHTML = '<div class="attente">' + HORLOGE + "<span>Vidéo en préparation · elle sera publiée au fil du voyage</span></div>";
     }
     $("#video-titre").textContent = v.titre;
     $("#video-description").textContent = v.description || "";
